@@ -25,7 +25,7 @@ ul{
    width: 1100px;
    max-width: 100%;
    margin: 0 auto;
-   border: 1px solid #000000;
+   border: 2px solid #000;
 }
 
 /*Nav*/
@@ -126,6 +126,61 @@ ul{
   
 }
 
+/*peintures*/
+.section-header{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.section-header .section-title{
+   font-size: 40px;
+   text-shadow: 5px 5px 10px #ccc;
+   margin-bottom: 15px;
+}
+
+.section-header .section-texte{
+   font-size: 15px;
+}
+
+.peintures{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-row: 10px;
+   align-items: center;
+}
+
+.peintures .peinture{
+   width: 350px;
+   margin: 0 auto;
+   margin-bottom: 25px;
+}
+
+.peinture img{
+   width: 350px;
+   max-width: 100%;
+}
+
+.peinture-info{
+   line-height: 1.6;
+   font-size: 15px;
+}
+
+.peinture-info span{
+   font-size: 18px;
+   margin-left: 10px;
+}
+
+.peinture .fa-solid{
+   font-size: 16px;
+   color: palevioletred;
+}
+
+.peinture .fa-solid:hover{
+   color: red;
+}
+
 footer{
    text-align: center;
    color: #fff;
@@ -136,7 +191,7 @@ footer{
 @media(max-width : 760px){
    .container{
       width: 100%;
-      max-width: 760px;
+      max-width: 700px;
       margin: 0 auto;
    }
 
@@ -199,7 +254,23 @@ footer{
    }
 
    .btn-space a{
-      width: 300px;
+      width: 350px;
+   }
+
+   /*peintures*/
+   .section-header .section-title{
+      font-size: 30px;
+   }
+   
+   .section-header .section-texte{
+      font-size: 12px;
+   }
+
+   .peintures{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row: 10px;
+      align-items: center;
    }
 
 }
