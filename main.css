@@ -230,10 +230,13 @@ ul{
    width: 70%;
    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8), 0 7px 20px 0 rgba(0, 0, 0, 0.3);
    text-align: justify;
+   animation-name: modalopen;
+   animation-duration: 1.5s;
 }
 
-.modal-content p{
-   margin-bottom: 10px;
+
+.modal-body p{
+   margin-bottom: 15px;
    font-size: 16px;
 }
 
@@ -246,10 +249,21 @@ ul{
    font-weight: 900;
 }
 
+.modal-footer h3{
+   font-size: 14px;
+   font-weight: 900;
+}
+
+@keyframes modalopen{
+   from{opacity: 0}
+   to {opacity: 1}
+}
+
 #closeBtn{
    color: #ccc;
    float: right;
    font-size: 30px;
+   margin-top: -10px;
 }
 
 #closeBtn:hover,
@@ -358,6 +372,11 @@ footer{
 .modal-content p{
    margin-bottom: 10px;
    font-size: 15px;
+}
+
+.modal-footer h3{
+   font-size: 10px;
+   font-weight: 900;
 }
 
 }
