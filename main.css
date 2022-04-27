@@ -119,6 +119,7 @@ ul{
    color: #fff;
    font-weight: 900;
    letter-spacing: 2px;
+   cursor: pointer;
 }
 
 .btn-space a:hover{
@@ -141,14 +142,19 @@ ul{
 }
 
 .section-header .section-texte{
-   font-size: 15px;
+   font-size: 18px;
+}
+
+.section-texte span{
+   font-weight: 900;
 }
 
 .peintures{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-row: 10px;
+   grid-row: 15px;
    align-items: center;
+   margin-bottom: 20px;
 }
 
 .peintures .peinture{
@@ -179,6 +185,77 @@ ul{
 
 .peinture .fa-solid:hover{
    color: red;
+}
+
+/*Modal*/
+.button{
+   display: block;
+   background-color: #262626;
+   color: #fff;
+   padding: 10px;
+   border: 0;
+   border-radius: 10px;
+   width: 400px;
+   margin: 0 auto;
+   text-transform: uppercase;
+   font-weight: 900;
+   letter-spacing: 1px;
+   cursor: pointer;
+   margin-bottom: 30px;
+}
+
+.button:hover,
+.button:focus{
+   background-color: orangered;
+}
+
+.modal{
+   display:none;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: auto;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.2);
+   margin-bottom: 10px;
+}
+
+.modal-content{
+   background-color: #fafafa;
+   margin:  10% auto;
+   padding: 20px;
+   width: 70%;
+   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8), 0 7px 20px 0 rgba(0, 0, 0, 0.3);
+   text-align: justify;
+}
+
+.modal-content p{
+   margin-bottom: 10px;
+   font-size: 16px;
+}
+
+.modal-content p:first-of-type{
+   margin-top: 50px;
+   margin-bottom: 10px;
+}
+
+.modal-content span{
+   font-weight: 900;
+}
+
+#closeBtn{
+   color: #ccc;
+   float: right;
+   font-size: 30px;
+}
+
+#closeBtn:hover,
+#closeBtn:focus{
+   color: #000;
+   cursor: pointer;
 }
 
 footer{
@@ -272,5 +349,15 @@ footer{
       grid-row: 10px;
       align-items: center;
    }
+
+   /*Modal*/
+.button{
+   width: 350px; 
+}
+
+.modal-content p{
+   margin-bottom: 10px;
+   font-size: 15px;
+}
 
 }
