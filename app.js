@@ -76,5 +76,20 @@ function clickOutside(e){
    }
 }
 
+// // albums
+let num1Count = 0;
+let num2Count = 0;
+let num3Count = 0;
+let num4Count = 0;
+let num5Count = 0;
+let num6Count = 0;
+
+let like1Count = document.querySelector('#count1');
+let like2Count = document.querySelector('#count2');
+let like3Count = document.querySelector('#count3');
+let like4Count = document.querySelector('#count4');
+let like5Count = document.querySelector('#count5');
+let like6Count = document.querySelector('#count6');
+
 
 

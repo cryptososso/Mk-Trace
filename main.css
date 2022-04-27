@@ -272,6 +272,58 @@ ul{
    cursor: pointer;
 }
 
+/*Album*/
+.albums{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.album{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   margin-bottom: 25px;
+}
+
+.album img{
+   width: 350px;
+}
+
+.son-album{
+   padding: 30px;
+   margin-bottom: 10px;
+}
+
+.son-album .single{
+  padding: 15px;
+}
+
+.single audio{
+   width: 450px;
+}
+
+.single h3, 
+.single p{
+   padding: 2px 8px;
+
+}
+
+.single span{
+   font-size: 18px;
+   margin-left: 10px;
+}
+
+.single .fa-solid{
+   font-size: 16px;
+   color: palevioletred;
+}
+
+.single .fa-solid:hover{
+   color: red;
+}
+
 footer{
    text-align: center;
    color: #fff;
@@ -350,7 +402,7 @@ footer{
 
    /*peintures*/
    .section-header .section-title{
-      font-size: 30px;
+      font-size: 25px;
    }
    
    .section-header .section-texte{
@@ -378,5 +430,29 @@ footer{
    font-size: 10px;
    font-weight: 900;
 }
+
+/*albums*/
+
+.album{
+   flex-direction: column;
+}
+
+.album img{
+  width: 400px;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.son-album{
+   width: 100%;
+   margin: 0 auto;
+   padding: 30px;
+   margin-bottom: 10px;
+}
+
+.single audio{
+   width: 300px;
+}
+
 
 }
