@@ -40,7 +40,8 @@ document.querySelector('#single-1').addEventListener('click', function(){
  
  document.querySelector('#single-6').addEventListener('click', function(){
     num6Count += 1
-    num6Count.textContent = num6Count;
+    like6Count.textContent = num6Count;
  })
- 
+
+
 

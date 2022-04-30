@@ -10,19 +10,18 @@ let count2 = 0;
 let count3 = 0;
 let count4 = 0;
 let count5 = 0;
-let count6 = 6;
+let count6 = 0;
 
-let likeCount = document.querySelector('#count-1');
+let likeCount1 = document.querySelector('#count-1');
 let likeCount2 = document.querySelector('#count-2');
 let likeCount3 = document.querySelector('#count-3');
 let likeCount4 = document.querySelector('#count-4');
 let likeCount5 = document.querySelector('#count-5');
 let likeCount6 = document.querySelector('#count-6');
 
-
 document.querySelector('#heart-1').addEventListener('click', function(){
-  count1 += 1;
-  likeCount.textContent = count1;
+   count1 += 1;
+   likeCount1.textContent = count1;
 })
 
 document.querySelector('#heart-2').addEventListener('click', function(){

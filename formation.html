@@ -10,6 +10,7 @@
    <link rel="icon" type="image/png" href="./img/Mk-Trace-logo.png">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="carousel.css">
    <title>Mk Trace | Accueil</title>
 </head>
 <body>
@@ -42,29 +43,76 @@
       </p>
    </section>
 
-   <section class="formations">
-      <div class="image-formation">
-         <img src="./img-atelier/Screenshot_20220423-143321_WhatsApp.jpg" alt="Image peintre Mk Trace">
-         <img src="./img-atelier/Screenshot_20220423-143307_WhatsApp.jpg" alt="Image participant à l'atelier">
-         <img src="./img-atelier/IMG-20220419-WA0046.jpg" alt="enfant participant à l'atelier de peinture">
-         <img src="./img-atelier/IMG-20220423-WA0001.jpg" alt="enfant participant à l'atelier de peinture">
+   
+   <div class="carousel">
+      <div class="carousel-item carousel-item--visible"><img src="./img-atelier/Screenshot_20220423-143321_WhatsApp.jpg" alt="Mk Trace painting"></div>
+      <div class="carousel-item"><img src="./img-atelier/Screenshot_20220423-143307_WhatsApp.jpg" alt="Mk Trace painting"></div>
+      <div class="carousel-item"><img src="./img-atelier/IMG-20220419-WA0046.jpg" alt="Mk Trace painting"></div>
+      <div class="carousel-item"><img src="./img-atelier/IMG-20220423-WA0001.jpg" alt="Mk Trace painting"></div>
+     <!--
+      <div class="carousel-actions">
+         <button id="carousel-button-prev" aria-label="Previous slide"><i class="fas fa-arrow-left"></i></button>
+         <button id="carousel-button-next" aria-label="Next slide"><i class="fas fa-arrow-right"></i></button>
       </div>
+      -->
+   </div>
+ 
+   <div class="carousel-nav">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+   </div>
 
-      <div class="prix-modules">
+   
+
+   <section class="modules">
          <h2>Formations et Modules</h2>
-         <p>Dessin : 3 mois à 50 000 Fcfa</p>
+         <div class="table">
+         <table>
+            <tr>
+               <th>Module</th>
+               <th>Durée</th>
+               <th>Prix</th>
+            </tr>
+            <tr>
+               <td>Dessin</td>
+               <td>3 mois</td>
+               <td>50 000 Fcfa</td>
+            </tr>
+            <tr>
+               <td>Portrait et peinture</td>
+               <td>6 mois</td>
+               <td>120 000 Fcfa</td>
+            </tr>
+            <tr>
+               <td>Peinture bâtimeny</td>
+               <td>2 ans</td>
+               <td>200 000 Fcfa</td>
+            </tr>
+            <tr>
+               <td>Formation complète</td>
+               <td>3 ans</td>
+               <td>350 000 Fcfa</td>
+            </tr>
+         </table>
+      </div>
+         <p> Inscription : 5 000 Fcfa</p>
+   </section>  
+ 
+   <!--
+        <p>Dessin : 3 mois à 50 000 Fcfa</p>
          <p>Portraits et peintures : 6 mois à 120 000 Fcfa</p>
          <p>Peinture bâtiment : 2 ans à 200 000 Fcfa</p>
          <p>Formations complète : 3 ans à 350 000 Fcfa </p>
          <p> Inscription : 5 000 Fcfa</p>
-      </div>
-   </section>
+   -->
 
    <footer>
       <p>Designed by Nubi-Art&copy; 2022</p>
    </footer>
    </div>
 
-   <script src="app.js"></script>
+   <script src="carousel.js"></script>
 </body>
 </html>
