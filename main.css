@@ -367,6 +367,10 @@ tr:nth-child(even){
    padding: 15px;
 }
 
+.modules p:last-child{
+   margin-bottom: 50px;
+}
+
 footer{
    text-align: center;
    color: #fff;
