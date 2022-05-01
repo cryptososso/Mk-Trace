@@ -142,7 +142,7 @@ ul{
 }
 
 .section-header .section-texte{
-   font-size: 18px;
+   font-size: 20px;
 }
 
 .section-texte span{
@@ -180,7 +180,8 @@ ul{
 
 .peinture .fa-solid{
    font-size: 16px;
-   color: palevioletred;
+   color: rgb(179, 183, 188);
+   cursor: pointer;
 }
 
 .peinture .fa-solid:hover{
@@ -317,7 +318,8 @@ ul{
 
 .single .fa-solid{
    font-size: 16px;
-   color: palevioletred;
+   color: rgb(179, 183, 188);
+   cursor: pointer;
 }
 
 .single .fa-solid:hover{
@@ -369,6 +371,55 @@ tr:nth-child(even){
 
 .modules p:last-child{
    margin-bottom: 50px;
+}
+
+.artiste{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin: 0 auto;
+
+}
+
+.artiste img{
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 10px;
+}
+
+.texte-artiste{
+   margin-bottom: 35px;
+}
+
+.texte-artiste h2{
+   font-size: 35px;
+   text-align: center;
+   padding: 5px 5px;
+   margin-left: 10px;
+}
+
+.texte-artiste p{
+   padding:10px;
+   margin-left: 10px;
+   font-size: 18px;
+}
+
+#open-text{
+   color: blue;
+   cursor: pointer;
+}
+
+#read-more{
+   display: none;
+   margin-bottom: 50px;
+}
+
+.artiste .fa-brands{
+   color: blue;
+   font-size: 25px;
 }
 
 footer{
@@ -505,5 +556,18 @@ footer{
 .modules table{
    width: 350px;
 }
+
+/*artiste*/
+.artiste img{
+   width: 250px;
+   height: 250px;
+   border: 10px solid rgb(217, 215, 215);
+}
+
+
+.texte-artiste h2{
+   font-size: 25px;
+}
+
 
 }
