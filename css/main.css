@@ -326,6 +326,28 @@ ul{
    color: red;
 }
 
+.btn-buy{
+   text-align: center;
+   text-transform: uppercase;
+   padding: 10px 8px;
+   font-size: 20px;
+   cursor: pointer;
+   background-color: #262626;
+   color: #fff;
+   font-weight: 800;
+   width: 50%;
+   margin: 0 auto;
+   margin-bottom: 35px;
+   border: none;
+   border-radius: 10px;
+}
+
+.btn-buy:hover,
+.btn-buy:focus{
+   background-color: orangered;
+}
+
+
 /*Formation*/
 
 .modules h2{
